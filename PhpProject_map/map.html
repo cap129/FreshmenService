@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <link href="newcss.css" rel="stylesheet" type="text/css" media="all" />
+        <script type="text/javascript"
+                src="http://maps.googleapis.com/maps/api/js?sensor=false&language=en&key=AIzaSyAikfXu8T_9kZ0aW_lMm2CAcVsftziIjYM&sensor=true">
+        </script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+    
+        <script type="text/javascript" src="setMap.js"></script>
+        <script type="text/javascript" src="selectBuilding.js"></script>
+    </head>
+
+    <body onload="initialize()">
+        <div id="container">
+            <div id="header">
+                <div class="selection" align="center">Building:
+                    <select id="select" onchange="showMarker(this[selectedIndex].value);">
+                        <option selected="">Select a building</option>
+                        <option value="1001">Cathedral of Learning</option>
+                        <option value="1002">Barco Law Library</option>
+                        <option value="1003">School of Information Sciences</option>
+                        <option value="1004">Hillman Library</option>
+                    </select>
+                </div>
+                <div class="selection" align="center">Service:
+                    <select id="select2" onchange="serviceMarker(this[selectedIndex].value)
+                                    ;">
+                        <option selected="">Select a service</option>
+                        <option value="study">Study Area</option>
+                        <option value="food">Food</option>
+                        <option value="print">Print</option>
+                    </select>
+                </div>
+
+                <!-- alphabet table-->
+                <div class="selection" align="center">Buildings:
+                    <select>
+                        <option selected=""> </option>
+                        <option id="a" value="">A</option>
+                        <option id="b" value="">B</option>
+                        <option id="c" value="">C</option>
+                        <option id="d" value="">D</option>
+                        <option id="f" value="">F</option>
+                        <option id="h" value="">H</option>
+                        <option id="m" value="">M</option>
+                        <option id="s" value="">S</option>
+                    </select>
+                </div>
+                <script>
+
+
+                </script>
+                <div  class="selection" align="center">
+                    <select id="a_table" onchange="showMarker(this[selectedIndex].value);">
+                        <option selected="">Building List</option>
+                        <option value="">Ab</option>
+                        <option value="">AC</option>
+                        <option value="">Ah</option>
+                        <option value="">Af</option>
+                    </select>
+
+                    <select id="b_table" onchange="showMarker(this[selectedIndex].value);">
+                        <option selected="">Building List</option>
+                        <option value="">Ba</option>
+                        <option value="">Bd</option>
+                        <option value="">Bk</option>
+                        <option value="">Bz</option>
+                    </select>
+
+                    <select id="c_table" onchange="showMarker(this[selectedIndex].value);">
+                        <option selected="">Building List</option>
+                        <option value="">Ca</option>
+                        <option value="">Cd</option>
+                        <option value="">Ck</option>
+                        <option value="">Cy</option>
+                    </select>
+                </div>
+                <!-- alphabet table-->
+
+            </div>
+            <div id="content">
+                <div id="map_canvas" style="height:100%;width:100%;"></div>
+            </div>
+            <div id="menu">
+                <div id="txtHint"><b>Building info will be listed here.</b></div>
+            </div>
+
+        </div>
+
+
+    </body>
+</html>

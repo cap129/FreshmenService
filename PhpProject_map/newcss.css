@@ -1,0 +1,35 @@
+#container
+{width:1150px;
+ margin: 15px;
+}
+
+#header 
+{
+    height:50px;
+    background-color:#665cbe;
+    color:#FFFFFF;
+}
+
+#menu 
+{background-color:#eeeeee;
+ height:450px;
+ width:360px;
+ float:left;
+ padding: 30px;
+}
+
+#content 
+{
+    background-color:#ffffff;
+    height:510px;
+    width:730px;
+    padding:0px;
+    float:left;
+    text-align: center;
+}
+
+.selection
+{
+    padding:15px;
+    float:left;
+}
